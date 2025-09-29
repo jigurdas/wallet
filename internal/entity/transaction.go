@@ -2,10 +2,10 @@ package entity
 
 import "time"
 
-type transaction struct {
-	ID         int
+type Transaction struct {
+	ID         int64
 	FROMWALLET int
 	TOWALLET   int
-	AMOUNT     float64
+	AMOUNT     int64
 	CREATEDAT  time.Time
 }
